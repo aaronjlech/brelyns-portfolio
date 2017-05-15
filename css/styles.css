@@ -436,6 +436,9 @@ textarea {
   background: #fff;
   transform: rotateY(180deg); }
 
+.about-box img {
+  height: 100%; }
+
 .info-box > * {
   display: flex;
   justify-content: center;
@@ -465,6 +468,13 @@ textarea {
     margin: 0;
     font-size: 2em;
     font-family: 'Dancing Script', cursive; }
+
+.grid {
+  display: flex; }
+  .grid .grid__item {
+    flex: 1;
+    width: 200px;
+    font-size: 100px; }
 
 @font-face {
   font-family: "ITCAvantGardeStd";
