@@ -378,7 +378,7 @@ textarea {
 
 .nav {
   color: #fff;
-  background: #97E1C5;
+  background: #afe1d8;
   height: 45px;
   display: flex;
   position: fixed;
@@ -409,8 +409,8 @@ textarea {
   transform: rotateY(180deg); }
 
 .flip-container, .front, .back {
-  width: 300px;
-  height: 300px; }
+  width: 400px;
+  height: 400px; }
 
 /* flip speed goes here */
 .flipper {
@@ -428,7 +428,7 @@ textarea {
 /* front pane, placed above back */
 .front {
   z-index: 2;
-  background: #97E1C5;
+  background: #afe1d8;
   transform: rotateY(0deg); }
 
 /* back, initially hidden pane */
@@ -497,7 +497,11 @@ a {
     height: 100vh;
     background: url("../images/header_img.jpg") center center no-repeat; }
   #app-container .personal-info {
+    display: flex;
     height: 100vh;
-    background: url("../images/place_holder.jpg") center center no-repeat; }
+    justify-content: flex-end;
+    align-items: center;
+    background: url("../images/BL_About_Image.jpg") center center no-repeat;
+    background-size: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
