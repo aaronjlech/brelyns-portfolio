@@ -1,0 +1,102 @@
+.flip-container {
+	perspective: 1000px;
+
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+// .flip-container{
+//     width: 300px;
+//     height: 300px;
+// }
+// .info-box{
+//     display: flex;
+//     justify-content: center;
+//     align-items: baseline;
+
+// }
+
+.flip-container, .front, .back {
+	width: 300px;
+	height: 300px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+        background: $Green;
+
+	transform: rotateY(0deg);
+
+
+}
+
+/* back, initially hidden pane */
+.back {
+    background: #fff;
+	transform: rotateY(180deg);
+}
+
+
+
+
+
+.info-box{
+    > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .front{
+        h1{
+            margin: 0;
+            margin-top: 50px;
+            position: relative;
+            color: #FFF;
+            font-weight: bolder;
+            font-size: 200px;
+            span{
+                font-family: 'Open Sans Condensed', sans-serif;
+                font-weight: 100;
+                position: absolute;
+                top: -46px;
+                right: 43px;
+                color: #000;
+            }
+        }
+    }
+    .back{
+        text-align: center;
+        flex-direction: column;
+        .name_first{
+            margin: 0;
+            letter-spacing: .4em;
+            font-size: 1.3em;
+        }
+        .name_last{
+            margin: 0;
+            font-size: 2em;
+            font-family: 'Dancing Script', cursive;
+        }
+    }
+}

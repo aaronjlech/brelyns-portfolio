@@ -1,0 +1,45 @@
+@import "./imports/_normalize.scss";
+@import "./_colors.scss";
+@import "./_nav.scss";
+@import "./_flip-card.scss";
+@font-face {
+		font-family: "ITCAvantGardeStd";
+		src: url("./fonts/ITCAvantGardeStd-Bk.otf") format("opentype");
+	}
+*{ box-sizing: border-box }
+img {
+   width: 100%;
+   display: block;
+}
+a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    &:hover{
+        color: #fff;
+    }
+    &:focus{
+        color: #fff;
+    }
+    &:visited{
+        color: #fff;
+    }
+}
+
+#app-container{
+    font-family: "ITCAvantGardeStd", sans-serif;
+    .header-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 100vh;
+        background: url("../images/header_img.jpg")center center no-repeat;
+    }
+    .personal-info{
+                height: 100vh;
+
+        background: url("../images/place_holder.jpg")center center no-repeat;
+    }
+}
