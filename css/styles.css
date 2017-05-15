@@ -470,11 +470,47 @@ textarea {
     font-family: 'Dancing Script', cursive; }
 
 .grid {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px; }
   .grid .grid__item {
-    flex: 1;
-    width: 200px;
-    font-size: 100px; }
+    flex: 1 1 calc(33.333% - 40px);
+    width: 300px;
+    margin: 20px;
+    height: 300px; }
+  .grid .item_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(70, 70, 70, 0.8);
+    transition: all .3s; }
+    .grid .item_content:hover {
+      opacity: 0; }
+  .grid .item-1 {
+    background: url("../images/StockSnap_1.jpg") center center no-repeat;
+    background-size: cover; }
+  .grid .item-2 {
+    background: url("../images/StockSnap_2.jpg") center center no-repeat;
+    background-size: cover; }
+  .grid .item-3 {
+    background: url("../images/StockSnap_3.jpg") center center no-repeat;
+    background-size: cover; }
+  .grid .item-4 {
+    background: url("../images/StockSnap_4.jpg") center center no-repeat;
+    background-size: cover; }
+  .grid .item-5 {
+    background: url("../images/StockSnap_5.jpg") center center no-repeat;
+    background-size: cover; }
+  .grid .item-6 {
+    background: url("../images/StockSnap_6.jpg") center center no-repeat;
+    background-size: cover; }
 
 @font-face {
   font-family: "ITCAvantGardeStd";

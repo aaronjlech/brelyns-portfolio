@@ -1,0 +1,8 @@
+
+
+
+
+@mixin itemBackground($bg){
+    background: url($bg)center center no-repeat;
+    background-size: cover;
+}
