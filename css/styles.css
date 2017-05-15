@@ -364,6 +364,19 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+.menu-button {
+  border: 1px solid #FFF;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px; }
+  .menu-button span {
+    display: block;
+    background: #566973;
+    border-radius: 1px;
+    width: 15px;
+    height: 2px;
+    margin: 3px 0; }
+
 .nav {
   color: #fff;
   background: #97E1C5;
